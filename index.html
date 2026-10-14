@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<!-- Pagina de demonstracao. Marca, profissional, textos e imagens sao ficticios. Nenhum dado de cliente ou de paciente foi publicado. -->
+
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Dra. Helena Marques | Odontologia Estética em Cidade/UF</title>
+<meta name="description" content="Lentes de contato dental, ortodontia e harmonização orofacial com planejamento digital. Consultório em Cidade/UF. Agende sua avaliação com a Dra. Helena Marques.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#0B1F3A">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dra. Helena Marques | Odontologia Estética">
+<meta property="og:description" content="Sorriso e face planejados antes de qualquer procedimento. Agende sua avaliação.">
+<meta property="og:image" content="#">
+<meta property="og:url" content="https://exemplo.com.br">
+<link rel="canonical" href="https://exemplo.com.br">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- ===== TRACKING: cole Meta Pixel e GA4 aqui ===== -->
+<!-- ponto de instalação do Meta Pixel -->
+<!-- ponto de instalação do GA4 -->
+
+<style>
+:root{
+  /* --- paleta: azul marinho, dourado e branco --- */
+  --navy:#0B1F3A; --navy-2:#102D50; --navy-deep:#06121F;
+  --gold:#C9A24B; --gold-2:#E2C88C; --gold-deep:#A8823A;
+  --ink:#0B1F3A; --ink-soft:#46566E; --muted:#7C889B; --line:#E3E9F1;
+  --paper:#FFFFFF; --paper-2:#F4F7FB;
+  --green:#128C7E; --green-hi:#25D366;
+  --radius:14px; --maxw:1120px;
+  --shadow:0 1px 2px rgba(11,31,58,.05),0 10px 34px rgba(11,31,58,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:var(--paper);color:var(--ink);
+  line-height:1.6;font-size:16px;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 22px}
+h1,h2,h3,.serif{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;line-height:1.15;letter-spacing:-.01em}
+h1{font-size:clamp(2.1rem,6vw,3.6rem)}
+h2{font-size:clamp(1.75rem,4.6vw,2.7rem)}
+h3{font-size:clamp(1.12rem,2.6vw,1.38rem)}
+p{color:var(--ink-soft)}
+section{padding:clamp(56px,8vw,94px) 0}
+.eyebrow{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-deep);
+  font-weight:600;margin-bottom:14px;display:block}
+.lead{font-size:clamp(1rem,2.1vw,1.12rem);color:var(--ink-soft)}
+.center{text-align:center}
+.rule{width:44px;height:1px;background:var(--gold);margin:18px auto 0}
+
+/* ---------- blocos escuros ---------- */
+.dark{background:var(--navy);color:#F2F5FA}
+.dark h1,.dark h2,.dark h3{color:#fff}
+.dark p{color:#C6D0DE}
+.dark .eyebrow{color:var(--gold-2)}
+.dark .rule{background:var(--gold)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:17px 30px;
+  border-radius:100px;font-weight:600;font-size:.97rem;border:1px solid transparent;cursor:pointer;
+  transition:.22s ease;text-align:center;line-height:1.2}
+.btn-wa{background:var(--green);color:#fff;box-shadow:0 6px 22px rgba(18,140,126,.28)}
+.btn-wa:hover{background:#0f7a6d;transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold-deep)}
+.dark .btn-ghost{color:#F2F5FA;border-color:rgba(226,200,140,.45)}
+.dark .btn-ghost:hover{border-color:var(--gold-2);color:var(--gold-2);background:rgba(226,200,140,.08)}
+.btn-block{width:100%}
+.btn svg{width:19px;height:19px;flex:none;fill:currentColor}
+.cta-note{font-size:.8rem;color:var(--muted);margin-top:12px}
+.dark .cta-note{color:#9FAEC2}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:60;background:rgba(11,31,58,.92);
+  backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid rgba(226,200,140,.22)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{font-family:'Cormorant Garamond',serif;font-size:1.22rem;letter-spacing:.02em;color:#fff}
+.brand small{display:block;font-family:'Inter',sans-serif;font-size:.6rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--gold-2);font-weight:500;margin-top:1px}
+.nav .btn{padding:11px 20px;font-size:.85rem}
+@media(max-width:520px){.nav .btn span{display:none}.nav .btn{padding:11px 16px}}
+
+/* ---------- hero ---------- */
+.hero{padding:clamp(46px,7vw,82px) 0 clamp(50px,7vw,88px);position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;top:-200px;right:-200px;width:620px;height:620px;
+  background:radial-gradient(circle,rgba(201,162,75,.22),transparent 66%);pointer-events:none}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(160deg,rgba(16,45,80,.9),rgba(11,31,58,0) 60%)}
+.hero .wrap{position:relative;z-index:2}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,64px);align-items:center}
+@media(max-width:880px){.hero-grid{grid-template-columns:1fr;gap:34px}}
+.hero h1 em{font-style:normal;color:var(--gold-2)}
+.hero .lead{margin-top:20px;max-width:520px}
+.hero-cta{margin-top:30px;display:flex;flex-wrap:wrap;gap:12px}
+@media(max-width:520px){.hero-cta{flex-direction:column}.hero-cta .btn{width:100%}}
+.hero-proof{display:flex;gap:26px;margin-top:34px;padding-top:26px;
+  border-top:1px solid rgba(226,200,140,.28);flex-wrap:wrap}
+.hero-proof b{display:block;font-family:'Cormorant Garamond',serif;font-size:1.8rem;line-height:1;color:var(--gold-2)}
+.hero-proof span{font-size:.76rem;color:#9FAEC2}
+.hero-media{position:relative}
+.hero-media img{width:100%;height:auto;
+  border-radius:240px 240px 18px 18px;border:1px solid rgba(226,200,140,.35);
+  box-shadow:0 24px 60px rgba(3,10,20,.45)}
+.badge-float{position:absolute;bottom:18px;left:-12px;background:#fff;border:1px solid var(--gold-2);
+  border-radius:12px;padding:12px 16px;box-shadow:var(--shadow);font-size:.78rem;font-weight:500;color:var(--navy)}
+.badge-float b{color:var(--gold-deep)}
+@media(max-width:880px){.badge-float{left:8px}}
+
+/* ---------- faixa dourada ---------- */
+.trustbar{background:linear-gradient(90deg,var(--gold-deep),var(--gold),var(--gold-deep));color:var(--navy);padding:18px 0}
+.trustbar ul{display:flex;justify-content:center;gap:clamp(14px,4vw,46px);list-style:none;flex-wrap:wrap}
+.trustbar li{font-size:.79rem;font-weight:500;display:flex;align-items:center;gap:8px}
+.trustbar li::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--navy)}
+
+.grid{display:grid;gap:18px}
+.g3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:900px){.g3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.g3{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;transition:.22s ease}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--gold-2)}
+.card h3{margin-bottom:8px}
+.card p{font-size:.92rem}
+.icon{width:42px;height:42px;border-radius:11px;background:var(--navy);display:flex;align-items:center;
+  justify-content:center;margin-bottom:16px;font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--gold-2)}
+
+.pain{background:var(--paper-2)}
+.pain-list{list-style:none;display:grid;gap:12px;margin-top:28px}
+.pain-list li{background:#fff;border:1px solid var(--line);border-radius:11px;padding:16px 18px;
+  display:flex;gap:13px;align-items:flex-start;font-size:.95rem;color:var(--ink-soft)}
+.pain-list li::before{content:"—";color:var(--gold-deep);font-weight:600;flex:none}
+
+.step{position:relative;padding-left:56px}
+.step .num{position:absolute;left:0;top:0;width:38px;height:38px;border-radius:50%;border:1px solid var(--gold);
+  color:var(--gold-deep);display:flex;align-items:center;justify-content:center;
+  font-family:'Cormorant Garamond',serif;font-size:1.05rem}
+.steps{display:grid;gap:30px;grid-template-columns:repeat(2,1fr);margin-top:38px}
+@media(max-width:720px){.steps{grid-template-columns:1fr}}
+
+/* ---------- casos ---------- */
+.casos{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px;align-items:start}
+@media(max-width:900px){.casos{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.casos{grid-template-columns:1fr}}
+.caso{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:.22s ease}
+.caso:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--gold-2)}
+.caso img{width:100%;height:auto;object-fit:contain;background:var(--paper-2)}
+.caso .meta{padding:16px 18px 18px}
+.caso .tag{font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep);font-weight:600}
+.caso h3{font-size:1.08rem;margin:6px 0 6px}
+.caso p{font-size:.85rem;line-height:1.5}
+.caso .cro{margin-top:10px;padding-top:10px;border-top:1px solid var(--line);font-size:.68rem;color:var(--muted);line-height:1.45}
+.caso.wide{grid-column:span 2}
+@media(max-width:560px){.caso.wide{grid-column:span 1}}
+.caso.wide img{height:auto}
+.disclaimer{margin-top:24px;font-size:.78rem;color:var(--muted);text-align:center;max-width:760px;
+  margin-left:auto;margin-right:auto;line-height:1.6}
+
+/* ---------- protocolo ---------- */
+.proto{background:var(--navy-2)}
+.proto-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(26px,5vw,56px);align-items:center}
+@media(max-width:880px){.proto-grid{grid-template-columns:1fr}}
+.proto img{width:100%;height:auto;border-radius:var(--radius);
+  border:1px solid rgba(226,200,140,.3);box-shadow:0 20px 50px rgba(3,10,20,.4)}
+.proto ul{list-style:none;display:grid;gap:11px;margin-top:20px}
+.proto li{display:flex;gap:11px;font-size:.94rem;color:#CDD7E4}
+.proto li::before{content:"→";color:var(--gold-2);flex:none}
+
+.about{background:var(--paper)}
+.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(26px,5vw,56px);align-items:center}
+@media(max-width:880px){.about-grid{grid-template-columns:1fr}}
+.about img{width:100%;height:auto;border-radius:var(--radius);
+  border:1px solid var(--line);box-shadow:var(--shadow)}
+.creds{list-style:none;margin-top:22px;display:grid;gap:10px}
+.creds li{display:flex;gap:11px;font-size:.94rem;color:var(--ink-soft)}
+.creds li::before{content:"✓";color:var(--gold-deep);font-weight:700;flex:none}
+
+.quote{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px}
+.quote .stars{color:var(--gold);letter-spacing:3px;font-size:.85rem;margin-bottom:12px}
+.quote p{font-family:'Cormorant Garamond',serif;font-size:1.16rem;color:var(--ink);line-height:1.45}
+.quote footer{margin-top:16px;font-size:.82rem;color:var(--muted)}
+
+.ig-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:start;margin-top:30px}
+@media(max-width:900px){.ig-grid{grid-template-columns:1fr;max-width:420px;margin-left:auto;margin-right:auto}}
+.ig-slot{min-height:420px;border:1px dashed var(--line);border-radius:var(--radius);
+  background:var(--paper-2);display:flex;align-items:center;justify-content:center;
+  color:var(--muted);font-size:.78rem;text-align:center;padding:16px;overflow:hidden}
+.ig-slot.loaded{min-height:0;border:none;background:none;padding:0;display:block}
+
+.faq{max-width:800px;margin:34px auto 0}
+.faq details{border-bottom:1px solid var(--line);padding:6px 0}
+.faq summary{cursor:pointer;list-style:none;padding:18px 40px 18px 0;position:relative;font-weight:500;font-size:1rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:6px;top:16px;font-size:1.4rem;color:var(--gold);
+  transition:.2s;font-weight:300}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 0 20px;font-size:.94rem}
+
+.final{background:var(--navy)}
+.final-box{max-width:720px;margin:0 auto;text-align:center}
+.final .btn-wa{margin-top:28px;padding:19px 38px;font-size:1.02rem}
+.scarcity{display:inline-flex;align-items:center;gap:9px;margin-top:22px;font-size:.82rem;color:var(--gold-2);
+  border:1px solid rgba(226,200,140,.4);padding:9px 17px;border-radius:100px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--green-hi);animation:pulse 1.9s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+
+.local-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+@media(max-width:800px){.local-grid{grid-template-columns:1fr}}
+.mapbox{aspect-ratio:16/10;border-radius:var(--radius);border:1px dashed var(--line);
+  background:var(--paper-2);display:flex;align-items:center;justify-content:center;
+  color:var(--muted);font-size:.78rem;text-align:center;padding:20px;overflow:hidden}
+.local dl{display:grid;gap:16px;margin-top:22px}
+.local dt{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold-deep);font-weight:600}
+.local dd{font-size:.96rem;color:var(--ink-soft);margin-top:3px}
+
+footer.site{background:var(--navy-deep);border-top:1px solid rgba(226,200,140,.18);
+  padding:44px 0 110px;font-size:.82rem;color:#8FA0B6}
+footer.site .fgrid{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap}
+footer.site .brand{color:#fff}
+footer.site a:hover{color:var(--gold-2)}
+.legal{margin-top:22px;padding-top:20px;border-top:1px solid rgba(255,255,255,.09);font-size:.74rem;
+  line-height:1.7;color:#7C8CA3}
+
+.wa-float{position:fixed;right:18px;bottom:24px;z-index:70;width:56px;height:56px;border-radius:50%;
+  background:var(--green-hi);display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 26px rgba(37,211,102,.42);transition:.2s}
+.wa-float:hover{transform:scale(1.07)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+.mobile-bar{position:fixed;left:0;right:0;bottom:0;z-index:75;background:rgba(11,31,58,.96);
+  backdrop-filter:blur(10px);border-top:1px solid rgba(226,200,140,.25);
+  padding:10px 16px calc(10px + env(safe-area-inset-bottom))}
+.mobile-bar .btn{padding:15px}
+@media(max-width:780px){.wa-float{display:none}}
+@media(min-width:781px){.mobile-bar{display:none}}
+
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand">Dra. Helena Marques<small>Odontologia Estética</small></div>
+    <a class="btn btn-wa js-wa" data-origin="header" href="#">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 4.9L2 22l5.2-1.3c1.4.8 3 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.9-1.4-1.3-3-1.3-4.6 0-4.6 3.8-8.4 8.4-8.4s8.4 3.8 8.4 8.4-3.7 8.5-8.3 8.5z"/></svg>
+      <span>Agendar avaliação</span>
+    </a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero dark">
+  <div class="wrap hero-grid">
+    <div class="rv">
+      <span class="eyebrow">Odontologia estética · Harmonização orofacial · Cidade/UF</span>
+      <h1>Um sorriso que combina com o <em>seu rosto</em> — planejado antes de qualquer procedimento.</h1>
+      <p class="lead">
+        Avaliação com planejamento digital: você vê a projeção do resultado e entende cada etapa,
+        prazo e investimento antes de decidir. Sem pressa, sem promessa, sem procedimento desnecessário.
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-wa js-wa" data-origin="hero" href="#">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 4.9L2 22l5.2-1.3c1.4.8 3 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.9-1.4-1.3-3-1.3-4.6 0-4.6 3.8-8.4 8.4-8.4s8.4 3.8 8.4 8.4-3.7 8.5-8.3 8.5z"/></svg>
+          Agendar minha avaliação
+        </a>
+        <a class="btn btn-ghost" href="#casos">Ver casos reais</a>
+      </div>
+      <p class="cta-note">Resposta no WhatsApp em horário comercial · Sem compromisso</p>
+      <div class="hero-proof">
+        <div><b>5</b><span>anos de clínica</span></div>
+        <div><b>+9 mil</b><span>seguidores</span></div>
+        <div><b>+200</b><span>casos concluídos</span></div>
+      </div>
+    </div>
+    <div class="hero-media rv">
+      <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22900%22%20height%3D%22700%22%20viewBox%3D%220%200%20900%20700%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23efeae4%22/%3E%3Crect%20x%3D%2214%22%20y%3D%2214%22%20width%3D%22872%22%20height%3D%22672%22%20fill%3D%22none%22%20stroke%3D%22%239b8f82%22%20stroke-width%3D%222%22%20stroke-dasharray%3D%2212%209%22/%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2247%25%22%20fill%3D%22%239b8f82%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2230%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3ERetrato%3C/text%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2256%25%22%20fill%3D%22%239b8f82%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2220%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3Eimagem%20de%20demonstracao%3C/text%3E%3C/svg%3E" width="780" height="975" alt="Imagem de demonstracao" fetchpriority="high">
+      <div class="badge-float">CRO-UF <b>00000</b><br>Dra. Helena Marques</div>
+    </div>
+  </div>
+</section>
+
+<div class="trustbar">
+  <div class="wrap">
+    <ul>
+      <li>Planejamento digital do sorriso</li>
+      <li>Abordagem minimamente invasiva</li>
+      <li>Atendimento individual</li>
+      <li>Consultório próprio na sua cidade</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ============ DORES ============ -->
+<section class="pain">
+  <div class="wrap">
+    <div class="center rv" style="max-width:640px;margin:0 auto">
+      <span class="eyebrow">Você se identifica?</span>
+      <h2>Se você evita sorrir nas fotos, o problema raramente é só o dente.</h2>
+      <div class="rule"></div>
+    </div>
+    <ul class="pain-list rv" style="max-width:760px;margin-left:auto;margin-right:auto">
+      <li>Você cobre a boca ao rir ou escolhe o ângulo da foto antes de sorrir.</li>
+      <li>Já pesquisou lente de contato dental, mas tem medo de ficar artificial ou "de cavalo".</li>
+      <li>Ouviu que precisaria desgastar muito o dente e desistiu na hora.</li>
+      <li>Passou por avaliações onde te empurraram um orçamento sem explicar o porquê.</li>
+      <li>Quer resolver, mas não sabe quanto custa, quanto tempo leva e por onde começar.</li>
+    </ul>
+    <p class="center rv" style="max-width:660px;margin:26px auto 0;font-size:1.02rem;color:var(--ink)">
+      A avaliação existe justamente para responder isso — <strong>com projeção visual, plano por etapas
+      e valores claros</strong> antes de qualquer decisão.
+    </p>
+    <div class="center rv" style="margin-top:28px">
+      <a class="btn btn-wa js-wa" data-origin="dores" href="#">Quero minha avaliação</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CASOS REAIS ============ -->
+<section id="casos" style="background:var(--paper)">
+  <div class="wrap">
+    <div class="center rv" style="max-width:640px;margin:0 auto">
+      <span class="eyebrow">Casos clínicos</span>
+      <h2>Resultados executados no consultório</h2>
+      <p class="lead" style="margin-top:14px">
+        Casos reais atendidos pela Dra. Helena Marques, publicados com autorização dos pacientes.
+      </p>
+      <div class="rule"></div>
+    </div>
+
+    <div class="casos">
+      <div class="caso rv">
+        <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22900%22%20height%3D%22700%22%20viewBox%3D%220%200%20900%20700%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23efeae4%22/%3E%3Crect%20x%3D%2214%22%20y%3D%2214%22%20width%3D%22872%22%20height%3D%22672%22%20fill%3D%22none%22%20stroke%3D%22%239b8f82%22%20stroke-width%3D%222%22%20stroke-dasharray%3D%2212%209%22/%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2247%25%22%20fill%3D%22%239b8f82%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2230%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3ECaso%20clinico%3C/text%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2256%25%22%20fill%3D%22%239b8f82%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2220%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3Eimagem%20de%20demonstracao%3C/text%3E%3C/svg%3E" width="900" height="862" loading="lazy" alt="Imagem de demonstracao">
+        <div class="meta">
+          <span class="tag">Resultado final</span>
+          <h3>Sorriso em função</h3>
+          <p>O critério não é o dente branco isolado: é como o sorriso se comporta no rosto em movimento.</p>
+          <div class="cro">Procedimento realizado por Dra. Helena Marques. Imagem publicada com autorização.</div>
+        </div>
+      </div>
+      <div class="caso rv">
+        <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22900%22%20height%3D%22700%22%20viewBox%3D%220%200%20900%20700%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23efeae4%22/%3E%3Crect%20x%3D%2214%22%20y%3D%2214%22%20width%3D%22872%22%20height%3D%22672%22%20fill%3D%22none%22%20stroke%3D%22%239b8f82%22%20stroke-width%3D%222%22%20stroke-dasharray%3D%2212%209%22/%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2247%25%22%20fill%3D%22%239b8f82%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2230%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3ECaso%20clinico%3C/text%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2256%25%22%20fill%3D%22%239b8f82%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2220%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3Eimagem%20de%20demonstracao%3C/text%3E%3C/svg%3E" width="900" height="821" loading="lazy" alt="Imagem de demonstracao">
+        <div class="meta">
+          <span class="tag">Ortodontia</span>
+          <h3>Alinhar antes de estetizar</h3>
+          <p>Quando o incômodo é de posicionamento, corrigir a base evita desgaste desnecessário depois.</p>
+          <div class="cro">Tratamento acompanhado por Dra. Helena Marques. Imagem publicada com autorização.</div>
+        </div>
+      </div>
+      <div class="caso rv">
+        <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22900%22%20height%3D%22700%22%20viewBox%3D%220%200%20900%20700%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23efeae4%22/%3E%3Crect%20x%3D%2214%22%20y%3D%2214%22%20width%3D%22872%22%20height%3D%22672%22%20fill%3D%22none%22%20stroke%3D%22%239b8f82%22%20stroke-width%3D%222%22%20stroke-dasharray%3D%2212%209%22/%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2247%25%22%20fill%3D%22%239b8f82%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2230%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3ECaso%20clinico%3C/text%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2256%25%22%20fill%3D%22%239b8f82%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2220%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3Eimagem%20de%20demonstracao%3C/text%3E%3C/svg%3E" width="900" height="823" loading="lazy" alt="Imagem de demonstracao">
+        <div class="meta">
+          <span class="tag">Lentes de contato dental</span>
+          <h3>Forma, proporção e cor</h3>
+          <p>Laminados cerâmicos com desenho definido a partir da proporção facial da paciente.</p>
+          <div class="cro">Procedimento realizado por Dra. Helena Marques. Imagem publicada com autorização.</div>
+        </div>
+      </div>
+      <div class="caso rv" id="caso-hof">
+        <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22900%22%20height%3D%22700%22%20viewBox%3D%220%200%20900%20700%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23efeae4%22/%3E%3Crect%20x%3D%2214%22%20y%3D%2214%22%20width%3D%22872%22%20height%3D%22672%22%20fill%3D%22none%22%20stroke%3D%22%239b8f82%22%20stroke-width%3D%222%22%20stroke-dasharray%3D%2212%209%22/%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2247%25%22%20fill%3D%22%239b8f82%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2230%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3ECaso%20clinico%3C/text%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2256%25%22%20fill%3D%22%239b8f82%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2220%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3Eimagem%20de%20demonstracao%3C/text%3E%3C/svg%3E" width="900" height="822" loading="lazy" alt="Imagem de demonstracao">
+        <div class="meta">
+          <span class="tag">Harmonização orofacial</span>
+          <h3>Contorno labial</h3>
+          <p>Volume e definição trabalhados na proporção do rosto, sem alterar a expressão natural da paciente.</p>
+          <div class="cro">Procedimento realizado por Dra. Helena Marques. Registros de diagnóstico e de conclusão, publicados com autorização escrita da paciente. Resultados variam conforme cada caso.</div>
+        </div>
+      </div>
+      <div class="caso rv">
+        <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22900%22%20height%3D%22700%22%20viewBox%3D%220%200%20900%20700%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23efeae4%22/%3E%3Crect%20x%3D%2214%22%20y%3D%2214%22%20width%3D%22872%22%20height%3D%22672%22%20fill%3D%22none%22%20stroke%3D%22%239b8f82%22%20stroke-width%3D%222%22%20stroke-dasharray%3D%2212%209%22/%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2247%25%22%20fill%3D%22%239b8f82%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2230%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3ECaso%20clinico%3C/text%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2256%25%22%20fill%3D%22%239b8f82%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2220%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3Eimagem%20de%20demonstracao%3C/text%3E%3C/svg%3E" width="900" height="869" loading="lazy" alt="Imagem de demonstracao">
+        <div class="meta">
+          <span class="tag">Reabilitação estética</span>
+          <h3>Sorriso masculino</h3>
+          <p>Desenho com bordas mais retas e textura preservada — resultado que não denuncia o procedimento.</p>
+          <div class="cro">Procedimento realizado por Dra. Helena Marques. Imagem publicada com autorização.</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="disclaimer rv">
+      As imagens registram casos individuais. A indicação de qualquer procedimento depende de avaliação clínica,
+      e os resultados variam conforme as condições de cada paciente. Nenhum resultado é garantido.
+    </p>
+
+    <div class="center rv" style="margin-top:28px">
+      <a class="btn btn-wa js-wa" data-origin="casos" href="#">Quero avaliar o meu caso</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MÉTODO ============ -->
+<section id="metodo" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="center rv" style="max-width:640px;margin:0 auto">
+      <span class="eyebrow">Como funciona?</span>
+      <h2>4 etapas até o seu resultado — nenhuma delas é uma surpresa</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="steps">
+      <div class="step rv"><div class="num">1</div>
+        <h3>Avaliação e escuta</h3>
+        <p>Entendo o que te incomoda, sua rotina e seu prazo. Exame clínico completo, registro fotográfico
+        e leitura da proporção facial.</p></div>
+      <div class="step rv"><div class="num">2</div>
+        <h3>Planejamento digital</h3>
+        <p>Você visualiza a projeção do resultado antes de começar. Nada é executado sem que você aprove
+        forma, tamanho e cor.</p></div>
+      <div class="step rv"><div class="num">3</div>
+        <h3>Plano por etapas e investimento</h3>
+        <p>O que é essencial, o que é opcional, o tempo de cada fase e os valores — por escrito.
+        Você decide com informação, não sob pressão.</p></div>
+      <div class="step rv"><div class="num">4</div>
+        <h3>Execução e acompanhamento</h3>
+        <p>Abordagem mais conservadora possível para o seu caso, com retornos programados e
+        orientação de manutenção.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROTOCOLO (DIFERENCIAL DE MARCA) ============ -->
+<section class="proto dark">
+  <div class="wrap proto-grid">
+    <div class="rv">
+      <span class="eyebrow" style="color:var(--accent)">Protocolo próprio</span>
+      <h2>Asymmetric</h2>
+      <p style="margin-top:16px">
+        Texto de demonstração descrevendo o protocolo de atendimento: o que é, para quem é e o que o diferencia.
+      </p>
+      <ul>
+        <li>Planejamento digital antes de qualquer procedimento</li>
+        <li>Prova estética testada na boca do paciente</li>
+        <li>Acompanhamento após a entrega do caso</li>
+      </ul>
+      <a class="btn btn-wa js-wa" data-origin="protocolo" href="#" style="margin-top:26px">Saber se o protocolo se aplica a mim</a>
+    </div>
+    <div class="rv">
+      <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22900%22%20height%3D%22700%22%20viewBox%3D%220%200%20900%20700%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23efeae4%22/%3E%3Crect%20x%3D%2214%22%20y%3D%2214%22%20width%3D%22872%22%20height%3D%22672%22%20fill%3D%22none%22%20stroke%3D%22%239b8f82%22%20stroke-width%3D%222%22%20stroke-dasharray%3D%2212%209%22/%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2247%25%22%20fill%3D%22%239b8f82%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2230%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3ECaso%20clinico%3C/text%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2256%25%22%20fill%3D%22%239b8f82%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2220%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3Eimagem%20de%20demonstracao%3C/text%3E%3C/svg%3E" width="900" height="862" loading="lazy" alt="Imagem de demonstracao">
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRATAMENTOS ============ -->
+<section style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="center rv" style="max-width:620px;margin:0 auto 34px">
+      <span class="eyebrow">Tratamentos</span>
+      <h2>O que pode fazer parte do seu plano?</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="grid g3">
+      <div class="card rv"><div class="icon">L</div><h3>Lentes de contato dental</h3>
+        <p>Laminados ultrafinos para forma, cor e proporção, com o mínimo desgaste possível para o seu caso.</p></div>
+      <div class="card rv"><div class="icon">F</div><h3>Facetas em resina</h3>
+        <p>Alternativa reversível e de menor investimento, quando o objetivo permite abordagem conservadora.</p></div>
+      <div class="card rv"><div class="icon">C</div><h3>Clareamento dental</h3>
+        <p>Protocolo de consultório, caseiro ou combinado, definido conforme sensibilidade e resposta do esmalte.</p></div>
+      <div class="card rv"><div class="icon">O</div><h3>Ortodontia e alinhadores</h3>
+        <p>Correção do posicionamento antes da estética, quando o alinhamento é a causa real do incômodo.</p></div>
+      <div class="card rv"><div class="icon">H</div><h3>Harmonização orofacial</h3>
+        <p>Contorno labial e equilíbrio do terço inferior da face, integrados ao planejamento do sorriso.</p></div>
+      <div class="card rv"><div class="icon">G</div><h3>Contorno gengival</h3>
+        <p>Ajuste do desenho da gengiva para equilibrar a proporção e a exposição dos dentes.</p></div>
+    </div>
+    <p class="center rv" style="margin-top:26px;font-size:.85rem;color:var(--muted)">
+      A indicação é individual e definida somente após avaliação clínica. Nem todo caso é candidato a todo procedimento.
+    </p>
+  </div>
+</section>
+
+<!-- ============ SOBRE ============ -->
+<section class="about">
+  <div class="wrap about-grid">
+    <div class="rv"><img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22900%22%20height%3D%22700%22%20viewBox%3D%220%200%20900%20700%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23efeae4%22/%3E%3Crect%20x%3D%2214%22%20y%3D%2214%22%20width%3D%22872%22%20height%3D%22672%22%20fill%3D%22none%22%20stroke%3D%22%239b8f82%22%20stroke-width%3D%222%22%20stroke-dasharray%3D%2212%209%22/%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2247%25%22%20fill%3D%22%239b8f82%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2230%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3ERetrato%3C/text%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2256%25%22%20fill%3D%22%239b8f82%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2220%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3Eimagem%20de%20demonstracao%3C/text%3E%3C/svg%3E" width="860" height="1060" loading="lazy" alt="Imagem de demonstracao"></div>
+    <div class="rv">
+      <span class="eyebrow">Quem vai te atender?</span>
+      <h2>Dra. Helena Marques</h2>
+      <p class="lead" style="margin-top:16px">
+        Texto de demonstração em primeira pessoa sobre a trajetória e a forma de atender da profissional.
+      </p>
+      <ul class="creds">
+        <li>Cirurgiã-dentista</li>
+        <li>Especialização em Dentística — Instituição de exemplo</li>
+        <li>Formação em Harmonização Orofacial — Instituição de exemplo</li>
+        <li>Atualização em Prótese sobre Implante — 2024</li>
+        <li>Atendimento individual, com tempo de consulta reservado por paciente</li>
+      </ul>
+      <a class="btn btn-wa js-wa" data-origin="sobre" href="#" style="margin-top:26px">Falar com a Dra. Helena</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DEPOIMENTOS ============ -->
+<section style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="center rv" style="max-width:600px;margin:0 auto 34px">
+      <span class="eyebrow">Pacientes</span>
+      <h2>O que dizem depois do atendimento?</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="grid g3">
+      <div class="quote rv"><div class="stars">★★★★★</div>
+        <p>“Depoimento de demonstração. O atendimento foi explicado passo a passo e eu soube o que esperar em cada etapa.”</p>
+        <footer>— Paciente de exemplo, Cidade/UF</footer></div>
+      <div class="quote rv"><div class="stars">★★★★★</div>
+        <p>“Depoimento de demonstração. Consultório organizado e equipe atenciosa do início ao fim.”</p><footer>— Paciente de exemplo, Cidade/UF</footer></div>
+      <div class="quote rv"><div class="stars">★★★★★</div>
+        <p>“Depoimento de demonstração. Consultório organizado e equipe atenciosa do início ao fim.”</p><footer>— Paciente de exemplo, Cidade/UF</footer></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INSTAGRAM (REELS AO VIVO) ============
+     Cole o link do post/reel em data-url. Abra o post > "..." > Copiar link.
+     Carrega só quando o visitante rola até aqui. -->
+<section id="instagram" style="background:var(--paper)">
+  <div class="wrap">
+    <div class="center rv" style="max-width:620px;margin:0 auto">
+      <span class="eyebrow">No Instagram</span>
+      <h2>Acompanhe o dia a dia do consultório</h2>
+      <p class="lead" style="margin-top:14px">
+        <a href="https://www.instagram.com/clinica.demo" target="_blank" rel="noopener"
+           style="color:var(--accent-deep);border-bottom:1px solid var(--accent)">@clinica.demo</a>
+      </p>
+      <div class="rule"></div>
+    </div>
+    <div class="ig-grid rv">
+      <div class="ig-slot" data-url="#">Reel 1</div>
+      <div class="ig-slot" data-url="#">Post 2</div>
+      <div class="ig-slot" data-url="#">Reel 3</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="center rv" style="max-width:600px;margin:0 auto">
+      <span class="eyebrow">Dúvidas frequentes</span>
+      <h2>O que você provavelmente quer saber antes de agendar?</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="faq rv">
+      <details open><summary>A avaliação tem custo?</summary>
+        <p>conteúdo de demonstração</p></details>
+      <details><summary>Vou precisar desgastar meus dentes?</summary>
+        <p>Depende do seu caso. O planejamento parte sempre da opção mais conservadora possível; quando há
+        alternativa reversível que atenda ao seu objetivo, ela é apresentada primeiro. Você saberá exatamente
+        o que será feito antes de qualquer procedimento.</p></details>
+      <details><summary>Quanto tempo leva o tratamento?</summary>
+        <p>Varia conforme a complexidade. Casos estéticos simples costumam ser concluídos em poucas sessões;
+        casos que exigem alinhamento prévio levam mais tempo. O cronograma é definido na avaliação.</p></details>
+      <details><summary>Qual o investimento?</summary>
+        <p>O valor só pode ser definido após o exame clínico, porque depende do número de dentes, da técnica
+        indicada e da condição atual. Na avaliação você recebe o plano com os valores por etapa.</p></details>
+      <details><summary>Fica com aparência artificial?</summary>
+        <p>O planejamento digital existe para evitar isso: forma, proporção e cor são definidas a partir do
+        seu rosto e aprovadas por você antes da execução.</p></details>
+      <details><summary>Onde fica o consultório e quais os horários?</summary>
+        <p>Endereço de exemplo, com referência de localização, estacionamento no local e atendimento de segunda a sexta.</p></details>
+      <details><summary>Atende convênio?</summary>
+        <p>Conteúdo de exemplo sobre formas de pagamento e atendimento particular.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOCALIZAÇÃO ============ -->
+<section class="local" style="background:var(--paper)">
+  <div class="wrap local-grid">
+    <div class="rv"><div class="mapbox">Espaço reservado para o mapa</div></div>
+    <div class="rv">
+      <span class="eyebrow">Onde atendemos?</span>
+      <h2>Consultório em Cidade/UF</h2>
+      <dl>
+        <dt>Endereço</dt><dd>Rua de Exemplo, 100 — sala 1, Centro, Cidade/UF</dd>
+        <dt>Horários</dt><dd>Seg a sex, 9h às 19h · sáb sob agendamento</dd>
+        <dt>Contato</dt><dd>(00) 00000-0000 · @clinica.demo</dd>
+      </dl>
+      <a class="btn btn-wa js-wa" data-origin="local" href="#" style="margin-top:24px">Ver disponibilidade de horários</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA FINAL ============ -->
+<section class="final dark">
+  <div class="wrap final-box rv">
+    <span class="eyebrow" style="color:var(--accent)">Próximo passo</span>
+    <h2>Comece pela avaliação. Decida depois.</h2>
+    <p style="margin-top:16px">
+      Você sai da consulta sabendo o que precisa ser feito, em que ordem, em quanto tempo e por qual valor.
+      Se decidir não seguir, leva o planejamento com você mesmo assim.
+    </p>
+    <a class="btn btn-wa js-wa" data-origin="final" href="#">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 4.9L2 22l5.2-1.3c1.4.8 3 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.9-1.4-1.3-3-1.3-4.6 0-4.6 3.8-8.4 8.4-8.4s8.4 3.8 8.4 8.4-3.7 8.5-8.3 8.5z"/></svg>
+      Agendar minha avaliação no WhatsApp
+    </a>
+    <div class="scarcity"><span class="dot"></span> Agenda de avaliações limitada por semana</div>
+    <p style="font-size:.78rem;color:#B8AE9F;margin-top:18px">
+      Ao clicar, você será direcionado ao WhatsApp com uma mensagem pronta.
+    </p>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="brand" style="font-size:1.1rem;color:var(--ink)">Dra. Helena Marques</div>
+        <p style="font-size:.82rem;margin-top:6px;color:#8FA0B6">Odontologia Estética e Harmonização Orofacial · Cidade/UF</p>
+      </div>
+      <div style="display:grid;gap:6px">
+        <a href="https://www.instagram.com/clinica.demo" target="_blank" rel="noopener">Instagram @clinica.demo</a>
+        <a class="js-wa" data-origin="rodape" href="#">WhatsApp</a>
+        <a href="#">Política de Privacidade</a>
+      </div>
+    </div>
+    <div class="legal">
+      Responsável técnico: Dra. Helena Marques. CNPJ 00.000.000/0001-00 (exemplo).<br>
+      Este site tem caráter informativo e não substitui a consulta odontológica. A indicação de qualquer
+      procedimento depende de avaliação clínica individual, e os resultados variam de acordo com as condições
+      de cada paciente. Imagens de casos clínicos publicadas com autorização escrita dos pacientes, em
+      conformidade com o Código de Ética Odontológica (Resolução CFO-118/2012) e a Resolução CFO-196/2019.<br>
+      © <span id="ano"></span> Todos os direitos reservados.
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float js-wa" data-origin="float" href="#" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 4.9L2 22l5.2-1.3c1.4.8 3 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.9-1.4-1.3-3-1.3-4.6 0-4.6 3.8-8.4 8.4-8.4s8.4 3.8 8.4 8.4-3.7 8.5-8.3 8.5z"/><path d="M17.5 14.4c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2s-.8.9-1 1.1c-.2.2-.4.2-.7 0-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6l-.9-2.1c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7s1.2 3.1 1.3 3.3c.2.2 2.3 3.5 5.5 4.9.8.3 1.4.5 1.8.7.8.2 1.5.2 2 .1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.6-.4z"/></svg>
+</a>
+
+<div class="mobile-bar">
+  <a class="btn btn-wa btn-block js-wa" data-origin="barra-mobile" href="#">
+    <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 4.9L2 22l5.2-1.3c1.4.8 3 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.9-1.4-1.3-3-1.3-4.6 0-4.6 3.8-8.4 8.4-8.4s8.4 3.8 8.4 8.4-3.7 8.5-8.3 8.5z"/></svg>
+    Agendar avaliação no WhatsApp
+  </a>
+</div>
+
+<script>
+/* =========================================================
+   CONFIGURAÇÃO — edite apenas este bloco
+   ========================================================= */
+var CONFIG = {
+  whatsapp: "5500000000000",   // DDI+DDD+número, só dígitos
+  mensagem: "Olá, Dra. Helena! Vim pelo site e gostaria de agendar uma avaliação.",
+  rastrearOrigem: true
+};
+
+(function(){
+  var params = new URLSearchParams(location.search);
+  var utm = ["utm_source","utm_medium","utm_campaign","utm_content"]
+    .map(function(k){return params.get(k)?k+"="+params.get(k):null}).filter(Boolean).join(" | ");
+  document.querySelectorAll(".js-wa").forEach(function(el){
+    var origem = el.dataset.origin || "site";
+    var txt = CONFIG.mensagem;
+    if(CONFIG.rastrearOrigem) txt += " (origem: " + origem + (utm ? " | " + utm : "") + ")";
+    el.setAttribute("href","https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(txt));
+    el.setAttribute("target","_blank"); el.setAttribute("rel","noopener");
+    el.addEventListener("click",function(){ window.trackLead(origem); });
+  });
+})();
+
+window.trackLead = function(origem){
+  try{ if(window.fbq) fbq('track','Lead',{content_name:'WhatsApp',content_category:origem}); }catch(e){}
+  try{ if(window.gtag) gtag('event','generate_lead',{method:'whatsapp',section:origem}); }catch(e){}
+  try{ if(window.dataLayer) dataLayer.push({event:'click_whatsapp',section:origem}); }catch(e){}
+};
+
+/* Instagram: monta os embeds só quando a seção entra na tela */
+(function(){
+  var sec = document.getElementById("instagram"); if(!sec) return;
+  var obs = new IntersectionObserver(function(en){
+    if(!en[0].isIntersecting) return;
+    obs.disconnect(); var achou = false;
+    sec.querySelectorAll(".ig-slot").forEach(function(slot){
+      var url = slot.dataset.url || "";
+      if(url.indexOf("instagram.com") === -1) return;
+      achou = true; slot.classList.add("loaded");
+      slot.innerHTML = '<blockquote class="instagram-media" data-instgrm-captioned '+
+        'data-instgrm-permalink="'+url+'" data-instgrm-version="14" '+
+        'style="background:#FFF;border:0;border-radius:14px;margin:0;max-width:100%;min-width:260px;width:100%"></blockquote>';
+    });
+    if(!achou) return;
+    var s = document.createElement("script"); s.async = true;
+    s.src = "https://www.instagram.com/embed.js";
+    s.onload = function(){ if(window.instgrm) window.instgrm.Embeds.process(); };
+    document.body.appendChild(s);
+  },{rootMargin:"300px"});
+  obs.observe(sec);
+})();
+
+/* Animação de entrada, com rede de segurança */
+var revelar = function(){ document.querySelectorAll(".rv").forEach(function(el){ el.classList.add("in"); }); };
+if(!("IntersectionObserver" in window)){ revelar(); }
+else{
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
+  },{threshold:.08,rootMargin:"0px 0px -40px 0px"});
+  document.querySelectorAll(".rv").forEach(function(el){ io.observe(el); });
+  setTimeout(revelar, 3500);
+}
+
+/* FAQ: abre um por vez */
+document.querySelectorAll(".faq details").forEach(function(d){
+  d.addEventListener("toggle",function(){
+    if(d.open) document.querySelectorAll(".faq details").forEach(function(o){ if(o!==d) o.open=false; });
+  });
+});
+
+document.getElementById("ano").textContent = new Date().getFullYear();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"Dentist",
+  "name":"Dra. Helena Marques — Odontologia Estética",
+  "image":"#","url":"https://exemplo.com.br",
+  "telephone":"+5500000000000",
+  "address":{"@type":"PostalAddress","streetAddress":"[RUA, Nº]","addressLocality":"Cidade/UF","addressRegion":"PA","postalCode":"[CEP]","addressCountry":"BR"},
+  "openingHours":"Mo-Fr 09:00-19:00",
+  "sameAs":["https://www.instagram.com/clinica.demo"]
+}
+</script>
+</body>
+</html>
